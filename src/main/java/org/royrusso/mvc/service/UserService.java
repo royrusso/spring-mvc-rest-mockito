@@ -16,10 +16,16 @@ package org.royrusso.mvc.service;
  *
  */
 
-import org.springframework.stereotype.Service;
+import org.royrusso.mvc.domain.User;
 
-@Service
-public class UserService {
+public interface UserService {
 
+    public User getUser(int id);
+
+    public void saveUser(User user);
+
+    public void deleteUser(int id);
+
+    public void updateUser(User user);
 
 }
